@@ -1,0 +1,57 @@
+.movie-list {
+    padding: 0;
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .moviePosters {
+    display: flex;
+    overflow-x: auto; /* Horizontal scrolling */
+    white-space: nowrap; /* Keep the posters in a single row */
+    max-width: 100vw; /* Limit the container width to the viewport */
+    padding-bottom: 10px;
+    scrollbar-width: none; /* For Firefox */
+    margin: 0; /* Remove margin if any */
+    position: relative;
+  }
+  
+  .moviePosters::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  
+  .moviePosters img {
+    max-height: 300px; /* Control poster height */
+    margin-right: 10px; /* Space between posters */
+    flex-shrink: 0; /* Prevent shrinking */
+    width: auto; /* Allow width to adjust */
+    transition: transform 0.2s ease;
+    transform-origin: center center; /* Scale from center */
+  }
+  
+  .moviePosters img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .movie-list h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+
+
+  .trailer {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    margin-top: 20px;
+
+  }
+  
+  .trailer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    ;
+  }

@@ -1,0 +1,51 @@
+
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: none;
+    transition: background-color 0.3s ease; 
+}
+
+.portion{
+    display: flex;
+}
+
+.netflix{
+    width: 98px;
+    height: 45px;
+    margin : 10px 0px 0px 40px;
+
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right:110px ;
+}
+
+ul{
+    list-style-type: none ;
+    padding: 0;
+    display: flex;
+    margin-left:10px ;
+}
+
+li{
+padding:0 10px 0 10px;
+margin-right: 10px;
+
+}
+
+a{
+    color: #fff !important;
+    font-weight: 400 !important;
+}
+.navbar.scrolled {
+    background-color: black;
+}
